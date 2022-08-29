@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     gamemode = gamemode ? gamemode : getRandomElement(Object.values(gamemodes));
 
     const role = gamemode.id === "aram" ? roles.mid : getRandomElement(Object.values(roles));
-    const items = getRandomItems(allItems);
+    const items = getRandomItems(allItems, champ);
 
     const spells = getRandomUniqueElements(
         [

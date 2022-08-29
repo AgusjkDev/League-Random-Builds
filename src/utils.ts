@@ -1,4 +1,4 @@
-import { INVALID_ITEM_COMBOS } from "./constants";
+import { RUNAANS_HURRICANE_ID, INVALID_ITEM_COMBOS } from "./constants";
 
 export function getRandomElement<T>(arr: T[]): T {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -28,13 +28,23 @@ function hasInvalidItemCombo(itemsIds: number[], invalidItemCombos: number[][]) 
     return false;
 }
 
-export function getRandomItems(allItems: AllItems): Item[] {
-    const boots = getRandomUniqueElements(allItems.boots, 1)[0];
-    const mythic = getRandomUniqueElements(allItems.mythics, 1)[0];
+export function getRandomItems(allItems: AllItems, champ: Champ): Item[] {
+    const items =
+        champ.type === "RANGED"
+            ? allItems
+            : {
+                  ...allItems,
+                  legendaries: allItems.legendaries.filter(
+                      item => item.id !== RUNAANS_HURRICANE_ID
+                  ),
+              };
+
+    const boots = getRandomUniqueElements(items.boots, 1)[0];
+    const mythic = getRandomUniqueElements(items.mythics, 1)[0];
     let legendaries = <Item[]>[];
 
     while (true) {
-        legendaries = getRandomUniqueElements(allItems.legendaries, 4);
+        legendaries = getRandomUniqueElements(items.legendaries, 4);
 
         if (
             hasInvalidItemCombo([mythic.id], INVALID_ITEM_COMBOS.mythics) ||
