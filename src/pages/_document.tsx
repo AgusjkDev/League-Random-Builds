@@ -1,6 +1,32 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 const Document = () => {
+    const imagesToPreload = [
+        "maps/aram-off.png",
+        "maps/sr-off.png",
+        "roles/top.svg",
+        "roles/jungle.svg",
+        "roles/mid.svg",
+        "roles/bottom.svg",
+        "roles/support.svg",
+        "spells/barrier.png",
+        "spells/clarity.png",
+        "spells/cleanse.png",
+        "spells/exhaust.png",
+        "spells/flash.png",
+        "spells/ghost.png",
+        "spells/heal.png",
+        "spells/ignite.png",
+        "spells/mark.png",
+        "spells/smite.png",
+        "spells/teleport.png",
+        "spells/jungle.png",
+        "generate-hover.png",
+        "generate-disable.png",
+        "loading.gif",
+    ];
+    const soundsToPreload = ["gamemode.ogg", "generate.ogg", "select.ogg"];
+
     return (
         <Html lang="en">
             <Head>
@@ -31,7 +57,15 @@ const Document = () => {
                 <link rel="apple-touch-icon" sizes="96x96" href="/favicon.png" />
                 <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />
                 <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />
-                <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                {imagesToPreload.map((src, i) => (
+                    <link key={i} rel="preload" href={`/imgs/${src}`} as="image" />
+                ))}
+                <audio preload="auto">
+                    {soundsToPreload.map((src, i) => (
+                        <source key={i} src={`/sounds/${src}`} type="audio/ogg" />
+                    ))}
+                </audio>
             </Head>
 
             <body>
