@@ -68,7 +68,7 @@ const allItems: AllItems = {
         {
             id: 3036,
             name: "Lord Dominik's Regards",
-            alias: "3036_marksman_t3_dominkregards",
+            alias: "3036_marksman_t3_dominikregards",
         },
         {
             id: 3041,
@@ -134,7 +134,7 @@ const allItems: AllItems = {
         {
             id: 3107,
             name: "Redemption",
-            alias: "3107_enchanter_t3_redemption",
+            alias: "3107_enchanter_t3_redemption.pie_c_12_23",
         },
         {
             id: 3109,
@@ -175,17 +175,17 @@ const allItems: AllItems = {
         {
             id: 3142,
             name: "Youmuu's Ghostblade",
-            alias: "3142_assassin_t3_youmuusghostblade",
+            alias: "3142_assassin_t3_youmuusghostblade.pie_c_12_23",
         },
         {
             id: 3143,
             name: "Randuin's Omen",
-            alias: "3143_tank_t3_randuinsomen",
+            alias: "3143_tank_t3_randuinsomen.pie_c_12_23",
         },
         {
             id: 3153,
             name: "Blade of the Ruined King",
-            alias: "3153_fighter_t3_bladeoftheruinedking",
+            alias: "3153_fighter_t3_bladeoftheruinedking.pie_c_12_23",
         },
         {
             id: 3156,
@@ -195,7 +195,7 @@ const allItems: AllItems = {
         {
             id: 3157,
             name: "Zhonya's Hourglass",
-            alias: "3157_mage_t3_zhonyashourglass",
+            alias: "3157_mage_t3_zhonyashourglass.pie_c_12_23",
         },
         {
             id: 3165,
@@ -313,7 +313,7 @@ const allItems: AllItems = {
         {
             id: 8020,
             name: "Abyssal Mask",
-            alias: "3001_tank_t3_abyssalmask",
+            alias: "8020_tank_t3_abyssalmask",
         },
     ],
     mythics: [
@@ -336,12 +336,12 @@ const allItems: AllItems = {
         {
             id: 3152,
             name: "Hextech Rocketbelt",
-            alias: "3152_mage_t4_hextechrocketbelt",
+            alias: "3152_mage_t4_hextechrocketbelt.pie_c_12_23",
         },
         {
             id: 3190,
             name: "Locket of the Iron Solari",
-            alias: "3190_enchanter_t4_locketofironsolari",
+            alias: "3190_enchanter_t4_locketofironsolari.pie_c_12_23",
         },
         {
             id: 4005,
@@ -367,12 +367,12 @@ const allItems: AllItems = {
         {
             id: 6630,
             name: "Goredrinker",
-            alias: "6630_fighter_t4_goredrinker",
+            alias: "6630_fighter_t4_goredrinker.pie_c_12_23",
         },
         {
             id: 6631,
             name: "Stridebreaker",
-            alias: "6631_fighter_t4_stridebreaker",
+            alias: "6631_fighter_t4_stridebreaker.pie_c_12_23",
         },
         {
             id: 6632,
@@ -389,21 +389,21 @@ const allItems: AllItems = {
             name: "Luden's Tempest",
             alias: "6655_mage_t4_ludenstempest",
         },
-        { id: 6656, name: "Everfrost", alias: "6656_mage_t4_everfrost" },
+        { id: 6656, name: "Everfrost", alias: "6656_mage_t4_everfrost.pie_c_12_23" },
         {
             id: 6662,
-            name: "Frostfire Gauntlet",
-            alias: "6662_tank_t4_frostfiregauntlet",
+            name: "Iceborn Gauntlet",
+            alias: "6662_tank_t3_iceborngauntlet",
         },
         {
             id: 6664,
             name: "Turbo Chemtank",
-            alias: "6664_tank_t4_acceleratedchemtank",
+            alias: "6664_tank_t4_acceleratedchemtank.pie_c_12_23",
         },
         {
             id: 6671,
             name: "Galeforce",
-            alias: "6671_marksman_t4_galeforce",
+            alias: "6671_marksman_t4_galeforce.pie_c_12_23",
         },
         {
             id: 6672,
@@ -424,7 +424,7 @@ const allItems: AllItems = {
         {
             id: 6693,
             name: "Prowler's Claw",
-            alias: "6693_assassin_t4_prowlersclaw",
+            alias: "6693_assassin_t4_prowlersclaw.pie_c_12_23",
         },
     ],
 };
